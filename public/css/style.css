@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+.container > div {
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px -1px rgba(100,100,100,0.75);
+}
+
+.temperature {
+    background-color: #ffcdd2;
+}
+
+.humidity {
+    background-color: #c5cae9;
+}
+
+.container .title {
+    font-size: 1.2em;
+}
+
+.container .value {
+    font-size: 2em;
+}
+
+header {
+    text-align: center;
+    font-size: 2em;
+    padding: 15px;
+    box-shadow: 0px 0px 3px -1px rgba(100,100,100,0.75);
+    background-color: #efebe9;
+}

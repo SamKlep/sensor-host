@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet">
+    <title>Sensor Monitoring Dashboard</title>
+</head>
+
+<body>
+    <header>Sensor Dashboard</header>
+
+    <div class="container">
+        <div class="temperature">
+            <p class="title">Temperature</p>
+            <p class="value" id="temperature-display">Loading...</p>
+            <p class="unit">°F</p>
+        </div>
+        <div class="humidity">
+            <p class="title">Humidity</p>
+            <p class="value" id="humidity-display">Loading...</p>
+            <p class="unit">%</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <canvas id="temperature-chart" width="100%" height="400px"></canvas>
+        </div>
+        <div>
+            <canvas id="humidity-chart" width="100%" height="400px"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
